@@ -47,10 +47,10 @@ let cardsHTML = ``;
 for (const members of teamMembers) {
   const { name, role, email, img } = members;
   cardsHTML += `
-        <div class="col-4">
+        <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="card  mb-3">
             <div class="row g-0">
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-6">
                 <img
                   id="photo"
                   src="./${img}"
@@ -58,7 +58,7 @@ for (const members of teamMembers) {
                   alt="..."
                 />
               </div>
-              <div class="col-md-8">
+              <div class="col-md-8 col-sm-6">
                 <div class="card-body">
                   <h5 id="name" class="card-title">${name}</h5>
                   <p id="job" class="card-text">${role}</p>
